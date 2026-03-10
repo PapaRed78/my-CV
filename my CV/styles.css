@@ -21,10 +21,10 @@
       text-decoration: none;
       color: #db0303;
     }
-    /* ! link text color */
+    /* ? link text color */
   a {
     text-decoration: none;
-    color: #f80202;
+    color: #ff0000;
   }
 
   p {
@@ -32,8 +32,9 @@
     font-size: 18px;
     line-height: 1.5;
   }
- /* Selects the first <p> in its parent container */
-p:first-of-type {
-    color: #0602ff; 
-  }
-  
+footer {
+text-align: center;
+padding: 1px;
+background-color: #21fd04;
+
+}
