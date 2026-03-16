@@ -1,11 +1,13 @@
-   /* ? back round colors */
+   /* todo body background color/pic or linear gradient */
+   /* todo h1-h6 styles*/
+   /* ? body colors */
    body {
       font-family: Arial, sans-serif;
       background-color: #b0f5f5;
       margin: 20px;
      
     }
-/* todo round corners */
+    /* round corners */
     img {
       border-radius: 50%;
       width: 200px;
@@ -35,6 +37,36 @@
 footer {
 text-align: center;
 padding: 1px;
-background-color: #21fd04;
+background-color:#21fd0440
 
 }
+   /* table css  */
+caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid blue;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/premium-photo/creative-digital-skill-bar-blurry-dark-bokeh-background-education-career-progress-concept_670147-43984.jpg?w=2000);
+background-size: cover;
+background-position: center;}
+
+th, td {
+  border: 1px solid blue;
+  padding: 8px 10px;
+}
+
+th {
+  background-color: #21fd04;
+}
+
+td {
+  text-align: center;
+  color: #21fd04}
