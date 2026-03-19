@@ -6,27 +6,38 @@
   <!-- add some basic style -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="script.js"></script>
   <title>Digital CV</title>
     </head>
 
 <body>
+   <div class="background-image"></div>
+
   <!-- profile -->
-  <img src="images/20260308_204023.jpg" alt="Profile picture of LeRoy Dilsaver" class="profile-picture">
+   <div class="profile-container">
+  <img src="images/20260308_204023.jpg" alt="Profile picture of LeRoy Dilsaver" class="profile-picture" style="width:200px; border-radius:50%; vertical-align:middle;">
+   <div style="display:inline-block; vertical-align:middle; margin-left:40px; background-color: #0000008f;">
   <h1>LeRoy Dilsaver</h1>
   <h2>Contact Information</h2>
-  <p>Email: <a href="mailto:ldilsaver25@aol.com">ldilsaver25@aol.com</a>
-
-    <br>
+  Email: <a href="mailto:ldilsaver25@aol.com">ldilsaver25@aol.com</a>
+<br>
+<br>
      Phone: (843) 864-1881
 <br>
+<br>
 <!-- quick links -->
-  LinkedIn: <a href="https://www.linkedin.com/in/leroy-dilsaver-5354b6369/" target="_blank" ><img src="images/icons8-linkedin-94.png" alt="LinkedIn"  style="width: 30px;height:30px"></a>
+LinkedIn: <a href="https://www.linkedin.com/in/leroy-dilsaver-5354b6369/" target="_blank" ><img src="images/icons8-linkedin-94.png" alt="LinkedIn"  style="width: 30px;height:30px; color:black"></a>
 
-  GitHub: <a href="https://github.com/PapaRed78" target="_blank" ><i class="fa fa-github" style="font-size:36px; color:black"></i>
-</a></p>
+GitHub: <a href="https://github.com/PapaRed78" target="_blank" ><i class="fa fa-github" style="font-size:36px; color:rgb(4, 184, 255)"></i>
+  </a>
+ </div>
+</div>
+
+
 <!-- navigation -->
-  <nav>
+ 
+  <nav id="navbar">
+    <h3>Navigation</h3>
     <ul>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -34,7 +45,7 @@
       <li><a href="#current_projects">Current Projects</a></li>
     </ul>
   </nav>
-
+  
     <section id="summary">
       <h3>Summary</h3>
       <p>Dedicated laborer with 40 years of hands on experience across physically demanding, fast paced work environments. <br>Known for reliability, problem solving, and a strong work ethic.<br> Now channeling that same drive and discipline into learning software development engineering, with a passion for AI technology, web development, and building practical, real world solutions.</p>
@@ -121,9 +132,8 @@
       <td>The practice of building and styling interactive websites using HTML for structure, CSS for design, and JavaScript for dynamic behavior — and I am currently learning and strengthening all three.</td>
     </tr>
   </tbody>
-</table>
-/section>
-<!-- add forms  -->
+ </table>
+</section>
  
 <section id="current_projects">
   <h4>Current Projects</h4>
@@ -133,10 +143,32 @@
   </ol> 
 </section>
 
+<!-- contact form -->
+<form action="mailto:ldilsaver25@aol.com" method="post" enctype="text/plain" id="contact-form">
+  <h4>Contact Me</h4>
+  <label for="name">Name:</label>
+  <input type="text" placeholder="Name" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" placeholder="Email@gmail.com" id="email" name="email" required>
+  <label for="message">Message:</label>
+  <textarea placeholder="Your message here..." id="message" name="message" required></textarea>
+  <label for="reason">Reason for Contact:</label>
+<select name="reason" id="reason" required>
+    <option value="">--Select a reason--</option>
+    <option value="general_inquiry">General Inquiry</option>
+    <option value="technical_support">Technical Support</option>
+    <option value="job">Job Opportunity</option>
+    <option value="feedback">Feedback</option>
+</select>
+  <button type="submit" style="float: right;">Send Message</button>
+
+</form>
+
   <!-- add back to top -->
   <a href="#top" class="back-to-top">⬆ Back to Top</a>
   <footer>
-    <p>&copy; 2026 My Digital CV. All rights reserved.
+    <p> 
+      &copy; 2026 My Digital CV. All rights reserved.
      &copy; LinkedIn Corporation 2026 All rights reserved.
     &copy; 2026 GitHub, Inc. All rights reserved.</p>
   </footer>
