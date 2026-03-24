@@ -1,61 +1,79 @@
-   /* todo body background color/pic or linear gradient */
-   /* todo h1-h6 styles*/
-   /* ? body colors */
-   body {
-      font-family: Arial, sans-serif; color: #22ff05;
-      margin: 20px;
-   }
-
-    /* round corners */
-    img {
-      border-radius: 30%;
-      width: 200px;
-      height: 200px;
-    }
-    /* ! header text color */
-    h1, h2 {
-      color:#22ff05;
-    }
-    .back-to-top {
-      display: block;
-      margin-top: 20px;
-      text-decoration: none;
-      color: white;
-      text-align: center;
-      font-size: 2rem;
-    }
-    /* ? link text color */
-  a {
-    text-decoration: underline;
-    color: #22ff05;
-  }
-
- p:first-of-type{
-    color: #22ff05;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-footer {
-text-align: center;
-padding: 1px;
-background-color:#00000070
+/* todo body background color/pic or linear gradient */
+/* todo h1-h6 styles*/
+/* ? body colors */
+body {
+  font-family: Arial, sans-serif;
+  color: #22ff05;
+  margin: 2rem;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #0000004a;
 }
 
+/* ! header text color */
+h1 {
+  color: #22ff05;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
 
+h2 {
+  color: #22ff05;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
 h3 {
   max-width: max-content;
   background-color: rgb(30, 0, 255);
-  Font-size: 1.0rem;
+  font-size: 1rem;
   color: #ffffff;
- 
+  padding-bottom: 0.4rem;
 }
-   /* table css  */
+
+/* ? link text color */
+a {
+  text-decoration: none;
+  color: #22ff05;
+}
+a:hover {
+  color: #ff0000;
+}
+
+header section {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.back-to-top {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: #00000070;
+}
+
+/* table css  */
 caption {
   caption-side: top;
   text-align: left;
   padding-bottom: 10px;
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 table {
@@ -64,22 +82,27 @@ table {
   font-family: sans-serif;
   font-size: 0.8rem;
   letter-spacing: 1px;
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/premium-photo/creative-digital-skill-bar-blurry-dark-bokeh-background-education-career-progress-concept_670147-43984.jpg?w=2000);
-background-size: cover;
-background-position: center;}
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://img.freepik.com/premium-photo/creative-digital-skill-bar-blurry-dark-bokeh-background-education-career-progress-concept_670147-43984.jpg?w=2000);
+  background-size: cover;
+  background-position: center;
+}
 
-th, td {
+th,
+td {
   border: 1px solid blue;
   padding: 8px 10px;
 }
 
 th {
+  color: black;
   background-color: #21fd04;
 }
 
 td {
   text-align: center;
-  color: #21fd04
+  color: #21fd04;
 }
 
 /* contact form styles */
@@ -88,7 +111,8 @@ td {
   padding: 20px;
   border-radius: 5px;
   max-width: 400px;
-  margin-left:  10px;
+  margin-left: 10px;
+  border: #daff05 solid 2px;
 }
 #contact-form h4 {
   margin-top: 0;
@@ -100,14 +124,6 @@ td {
   color: #000000;
   cursor: pointer;
 }
-#contact-form input, #contact-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 4px;
-  cursor: pointer;
- }
 
 #contact-form button {
   background-color: red;
@@ -115,74 +131,106 @@ td {
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
-  cursor: pointer;}
-  
+  cursor: pointer;
+}
+
 #contact-form button:hover {
   background-color: #21fd04;
 }
 
 /* Styles when the mouse hovers over the input field */
 #email:hover {
-  background-color: #21fd04;}
+  background-color: #21fd04;
+}
 #message:hover {
-  background-color: #21fd04;}
+  background-color: #21fd04;
+}
 #name:hover {
-  background-color: #21fd04;}
+  background-color: #21fd04;
+}
 #reason:hover {
-  background-color: #21fd04;} 
+  background-color: #21fd04;
+}
 
 .background-image {
-    /* Position the div fixed to the viewport and make it cover everything */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    background-image: url('images/oceanview.webp');
-    
-    /* Center the image and scale it to cover the entire container (viewport) */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1; }
+  /* Position the div fixed to the viewport and make it cover everything */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    #summary {
-      background-color:#0000004a;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      max-width: max-content;
-    }
+  background-image: url("images/oceanview.webp");
 
-    #education {
-      background-color:#0000004a;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      max-width: max-content;
-    }
+  /* Center the image and scale it to cover the entire container (viewport) */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+/* section id */
+#summary {
+  background-color: #00000075;
+  border: #f705ff solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  max-width: max-content;
+}
 
-    #experience {
-      background-color: #0000004a;
-      padding: 1px;
-      border-radius: 5px;
-      max-width: max-content;
-    
-    }
-      #projects {
-        background-color: #0000004a;
-        padding: 10px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        
-      }
+#education {
+  background-color: #00000075;
+  border: #eeff00 solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  max-width: max-content;
+}
 
-      #navbar {
-        background-color: #0000004a;
-        padding: 10px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        display:inline-block;
-      }
-    
+#experience {
+  background-color: #00000075;
+  border: #ff4c05 solid 2px;
+  padding: 1px;
+  border-radius: 5px;
+  max-width: max-content;
+}
+#current_projects {
+  background-color: #00000075;
+  border: #ff0505 solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  max-width: max-content;
+}
+
+/* flexbox */
+header section .profile-container {
+  display: flex;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  align-self: flex-start;
+  padding: 20px;
+}
+header section .name-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+header section .info-container {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.navbar-container {
+  background-color: #000000;
+  border: #051eff solid 2px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+}
