@@ -4,25 +4,27 @@
 body {
   font-family: Arial, sans-serif;
   color: #22ff05;
-  margin: 2rem;
-  padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 100%;
   background-color: #0000004a;
 }
 
 /* ! header text color */
 h1 {
-  color: #22ff05;
+  color: black;
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(6, 184, 255);
+  max-width: max-content;
 }
 
 h2 {
   color: #ffffff;
   font-size: 1rem;
   background-color: rgb(30, 0, 255);
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.1rem;
   max-width: max-content;
 }
 h3 {
@@ -30,7 +32,42 @@ h3 {
   background-color: rgb(30, 0, 255);
   font-size: 1rem;
   color: #ffffff;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.1rem;
+}
+h4 {
+  max-width: max-content;
+  background-color: rgb(30, 0, 255);
+  font-size: 1rem;
+  color: #ffffff;
+  padding-bottom: 0.1rem;
+}
+.info-container {
+  background-color: #00000071;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+}
+.info-container a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.info-container a:hover {
+  color: #ff6600; /* hover color */
+  text-decoration: underline; /* optional */
+  transform: scale(1.1); /* subtle zoom */
+}
+.info-container a img,
+.info-container a i {
+  transition: 0.3s ease;
+}
+
+.info-container a:hover img,
+.info-container a:hover i {
+  transform: scale(1.4);
+  filter: brightness(1.3);
 }
 
 /* ? link text color */
@@ -84,7 +121,7 @@ table {
   font-size: 0.8rem;
   letter-spacing: 1px;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
     url(https://img.freepik.com/premium-photo/creative-digital-skill-bar-blurry-dark-bokeh-background-education-career-progress-concept_670147-43984.jpg?w=2000);
   background-size: cover;
   background-position: center;
@@ -98,7 +135,7 @@ td {
 
 th {
   color: black;
-  background-color: #21fd04;
+  background-color: #2492f8;
 }
 
 td {
@@ -108,7 +145,7 @@ td {
 
 /* contact form styles */
 #contact-form {
-  background-color: green;
+  background-color: rgba(1, 81, 255, 0.753);
   padding: 20px;
   border-radius: 5px;
   max-width: 400px;
@@ -171,7 +208,7 @@ td {
 }
 /* section id */
 #summary {
-  background-color: #00000075;
+  background-color: #00000091;
   border: #f705ff solid 2px;
   padding: 10px;
   border-radius: 5px;
@@ -181,7 +218,7 @@ td {
 }
 
 #education {
-  background-color: #00000075;
+  background-color: #00000080;
   border: #eeff00 solid 2px;
   padding: 10px;
   border-radius: 5px;
@@ -190,14 +227,14 @@ td {
 }
 
 #experience {
-  background-color: #00000075;
+  background-color: #00000080;
   border: #ff4c05 solid 2px;
   padding: 1px;
   border-radius: 5px;
   max-width: max-content;
 }
 #current_projects {
-  background-color: #00000075;
+  background-color: #00000080;
   border: #ff0505 solid 2px;
   padding: 10px;
   border-radius: 5px;

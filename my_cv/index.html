@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- add some basic style -->
-    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="script.js"></script>
     <title>Digital CV</title>
   </head>
@@ -18,21 +19,25 @@
     <!-- profile -->
     <header>
       <section>
-        <div class="profile-container">
+        <se class="profile-container">
           <img
             src="images/20260308_204023.jpg"
             alt="Profile picture of LeRoy Dilsaver"
             class="profile-picture"
-            style="width: 200px; border-radius: 50%; vertical-align: middle">
+            style="width: 200px; border-radius: 50%; vertical-align: middle"
+          />
+          </section>
         </div>
         <div class="name-container">
           <h1>LeRoy Dilsaver</h1>
         </div>
 
         <div class="info-container">
-          <a href="mailto:ldilsaver25@aol.com">ldilsaver25@aol.com</a>
+          Email:
+          <a href="mailto:ldilsaver25@aol.com">ldilsaver25@aol.com</a><br>
 
-          Phone: (843) 864-1881 LinkedIn:
+          Phone: (843) 864-1881 <br>
+          LinkedIn:
           <a
             href="https://www.linkedin.com/in/leroy-dilsaver-5354b6369/"
             target="_blank"
@@ -40,7 +45,8 @@
             <img
               src="images/icons8-linkedin-94.png"
               alt="LinkedIn"
-              style="width: 30px; height: 30px">
+              style="width: 30px; height: 30px"
+            />
           </a>
 
           GitHub:
@@ -51,7 +57,7 @@
             ></i>
           </a>
         </div>
-      </section>
+     
     </header>
     <!-- navigation -->
     <div class="navbar-container">
@@ -68,13 +74,14 @@
       <section id="summary">
         <h2>Summary</h2>
         <p>
-          Dedicated laborer with 40 years of hands on experience across
-          physically demanding, fast paced work environments. <br>Known for
-          reliability, problem solving, and a strong work ethic.<br>
-          Now channeling that same drive and discipline into learning software
-          development engineering, with a passion for AI technology, web
-          development, and building practical, real world solutions.
+          <ul>
+            <li>Reliable and hardworking individual with 40 years of experience</li>
+            <li>Strong work ethic and problem-solving skills</li>
+            <li>Passionate about learning software development engineering</li>
+            <li>Interested in AI technology, web development, and practical solutions</li>
+          </ul>
         </p>
+
       </section>
 
       <section id="education">
@@ -101,6 +108,17 @@
             efficiency
           </li>
         </ul>
+        <h4>Lyft and Uber</h4>
+        <p>June 2016 - Present</p>
+        <ul>
+          <li>
+            Provided reliable transportation services to customers in a
+            fast-paced environment
+          </li>
+          <li>Maintained a clean and safe vehicle for passenger use</li>
+          <li>Met pre-scheduled on-time rides for customers</li>
+        </ul>
+
         <h4>Cub Cadet Manufacturing</h4>
         <p>June 2008 - June 2013</p>
         <ul>
@@ -135,10 +153,12 @@
         </ul>
 
         <h4>Construction and Land Scaping</h4>
-        <p>1996 - June 2003</p>
+        <p>1986 - June 2003</p>
         <ul>
           <li>
-            landscaped residential and commercial properties, including
+            landscaped residential and commercial properties,
+          </li>
+          <li>
             planting, mulching,snow removal, mowing, seasonal removal, soft
             scaping and hard scaping
           </li>
@@ -157,10 +177,7 @@
         <h4>Skills</h4>
         <!-- add table for skills -->
         <table>
-          <caption>
-            Skills that i have learned
-          </caption>
-          <thead>
+         <thead>
             <tr>
               <th>Skills name</th>
               <th>Skills description</th>
@@ -179,7 +196,7 @@
               <td>CNC Operation</td>
               <td>
                 The process of using computer controlled machines to cut, shape,
-                or manufacture materials with high precision e.com
+                or manufacture materials with high precision and repeatability.
               </td>
             </tr>
             <tr>
@@ -232,16 +249,17 @@
         enctype="text/plain"
         id="contact-form"
       >
-        <h4>Contact Me</h4>
+        <h5>Contact Me</h5>
         <label for="name">Name:</label>
-        <input type="text" placeholder="Name" id="name" name="name" required >
+        <input type="text" placeholder="Name" id="name" name="name" required />
         <label for="email">Email:</label>
         <input
           type="email"
           placeholder="Email@gmail.com"
           id="email"
           name="email"
-          required>
+          required
+        />
         <label for="message">Message:</label>
         <textarea
           placeholder="Your message here..."
